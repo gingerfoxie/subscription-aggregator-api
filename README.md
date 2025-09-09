@@ -113,6 +113,7 @@ SERVER_PORT=8080
 DATABASE_URL=postgres://postgres:postgres@db:5432/subscription_db?sslmode=disable
 # Logger
 LOG_OUTPUT=file # значения: file|stdout
+LOG_LEVEL=info  # значения: info|debug
 ```
 
 ## 🗄 Миграции базы данных

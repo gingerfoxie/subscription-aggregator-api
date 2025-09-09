@@ -6,10 +6,8 @@ import (
 	"github.com/sirupsen/logrus"
 )
 
-func InitLogger() {
+func InitLogger(logOutput, logLevel string) {
 
-	// Читаем настройку из переменной окружения
-	logOutput := os.Getenv("LOG_OUTPUT")
 	if logOutput == "" {
 		logOutput = "stdout" // значение по умолчанию
 	}
@@ -34,7 +32,6 @@ func InitLogger() {
 	logrus.SetFormatter(&logrus.JSONFormatter{})
 
 	// Устанавливаем уровень логирования из env (опционально)
-	logLevel := os.Getenv("LOG_LEVEL")
 	if logLevel == "" {
 		logLevel = "info"
 	}
