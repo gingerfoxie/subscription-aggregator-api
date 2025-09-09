@@ -15,6 +15,8 @@ type Config struct {
 	DBName     string
 	DBSslMode  string
 	ServerPort string
+	LogOutput  string
+	LogLevel   string
 }
 
 func LoadConfig() *Config {
@@ -30,6 +32,8 @@ func LoadConfig() *Config {
 		DBName:     getEnv("DB_NAME", "subscription_db"),
 		DBSslMode:  getEnv("DB_SSLMODE", "disable"),
 		ServerPort: getEnv("SERVER_PORT", "8080"),
+		LogOutput:  getEnv("LOG_OUTPUT", "stdout"),
+		LogLevel:   getEnv("LOG_LEVEL", "debug"),
 	}
 }
 

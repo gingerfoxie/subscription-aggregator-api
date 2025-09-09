@@ -109,6 +109,11 @@ DB_PASSWORD=postgres
 DB_NAME=subscription_db
 DB_SSLMODE=disable
 SERVER_PORT=8080
+# Для Docker
+DATABASE_URL=postgres://postgres:postgres@db:5432/subscription_db?sslmode=disable
+# Logger
+LOG_OUTPUT=file # значения: file|stdout
+LOG_LEVEL=info  # значения: info|debug
 ```
 
 ## 🗄 Миграции базы данных
@@ -118,16 +123,9 @@ SERVER_PORT=8080
 ## 🧪 Тестирование
 
 ```bash
+# TODO:
 # Запуск unit тестов
-go test ./...
-
-# Запуск с coverage
-go test -cover ./...
-# Запуск unit тестов
-go test ./...
-
-# Запуск с coverage
-go test -cover ./...
+# Запуск coverage
 ```
 
 ## 📈 Мониторинг

@@ -76,5 +76,5 @@ func (a *App) initServices() error {
 
 func (a *App) initRouter() {
 	// Additional router configuration can be done here
-	logger.InitLogger()
+	logger.InitLogger(a.config.LogOutput, a.config.LogLevel)
 }
