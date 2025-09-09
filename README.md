@@ -54,7 +54,7 @@ subscription-aggregator-api/
 
 ```bash
 # Клонирование репозитория
-git clone https://github.com/ваш-логин/subscription-aggregator-api.git
+git clone https://github.com/gingerfoxie/subscription-aggregator-api.git
 cd subscription-aggregator-api
 
 # Запуск сервиса
@@ -78,17 +78,20 @@ go run cmd/server/main.go
 
 ### Подписки
 
-|МЕТОД|ENDPOINT|Описание|
-|POST|/api/v1/subscriptions|Создать подписку|
-|GET|/api/v1/subscriptions|Получить список подписок|
-|GET|/api/v1/subscriptions/{id}|Получить подписку по ID|
-|PUT|/api/v1/subscriptions/{id}|Обновить подписку|
-|DELETE|/api/v1/subscriptions/{id}Удалить подписку|
+|  Метод |      ENDPOINT    |          Описание            |
+|--------|------------------|------------------------------|
+| POST |`/api/v1/subscriptions`|Создать подписку|
+| GET |`/api/v1/subscriptions`|Получить список подписок|
+| GET |`/api/v1/subscriptions/{id}`|Получить подписку по ID|
+| PUT |`/api/v1/subscriptions/{id}`|Обновить подписку|
+| DELETE |`/api/v1/subscriptions/{id}`|Удалить подписку|
+
 
 ### Аналитика
 
 |МЕТОД|ENDPOINT|Описание|
-|GET|/api/v1/total|Получить суммарную стоимость подписок|
+|--------|------------------|------------------------------|
+|GET|`/api/v1/total`|Получить суммарную стоимость подписок|
 
 ## Swagger UI
 
@@ -133,22 +136,22 @@ go test -cover ./...
 
 ## 🤝 Вклад в проект
 
-Форкните репозиторий
-Создайте ветку для вашей фичи (git checkout -b feature/AmazingFeature)
-Зафиксируйте изменения (git commit -m 'Add some AmazingFeature')
-Запушьте ветку (git push origin feature/AmazingFeature)
-Откройте Pull Request
+Форкните репозиторий  
+Создайте ветку для вашей фичи (git checkout -b feature/AmazingFeature)  
+Зафиксируйте изменения (git commit -m 'Add some AmazingFeature')  
+Запушьте ветку (git push origin feature/AmazingFeature)  
+Откройте Pull Request  
 
 ## 📄 Лицензия
 
-Этот проект лицензирован под MIT License - смотрите файл LICENSE для подробностей.
+Этот проект лицензирован под MIT License - смотрите файл LICENSE.md для подробностей.
 
 ## 👤 Автор
 
-gingerfoxie
+[gingerfoxie](https://github.com/gingerfoxie)
 
 ## 🙏 Благодарности
 
-Gin Framework
-GORM
-Swagger
+Gin Framework  
+GORM  
+Swagger  
